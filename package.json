@@ -42,7 +42,7 @@
     "test": "eslint .",
     "dev": "parallelshell \"node server.js\" \"npm run watch:js\" \"npm run watch:css\" \"npm run live-reload\"",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js -p $PORT",
+    "start": "SET NODE_ENV=production & node server.js -p $PORT",
     "build:js": "browserify -t babelify -t uglifyify assets/js/main.js -o static/bundle.js",
     "watch:js": "watchify assets/js/main.js -t babelify -o static/bundle.js -v",
     "css": "node-sass --include-path css --output-style compressed assets/css/main.sass static/main.css",
