@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - node
 before_deploy:
-  - echo HEROKU_SECURE
+  - echo process.env.HEROKU_SECURE
 deploy:
   provider: heroku
   api_key: process.env.HEROKU_SECURE
