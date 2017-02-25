@@ -20,7 +20,6 @@ app.prepare().then(() => {
 		else handle(req, res, parsedUrl)
 	}).listen(process.env.PORT || 3000, err => {
 		if (err) throw err
-		console.log(process.env.WP_URL)
 		console.log('Listening on http://localhost:3000')
 	})
 })
