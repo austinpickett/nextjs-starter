@@ -3,6 +3,5 @@ node_js:
   - node
 deploy:
   provider: heroku
-  api_key: 
-    secure: HEROKU_SECURE
+  api_key: process.env.HEROKU_SECURE
   app: nextjs-starter
